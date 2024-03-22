@@ -1,4 +1,7 @@
-# Testing suite for Bal Persist CLI
+# Test suite for Bal Persist CLI
+
+This test suite is prepared to test the newly added annotations for SQL databases and introspection support for `bal persist`.
+
 ## Preparation
 Create alias for the ballerina distribution built from `persist-tools` and spin up docker containers for databases.
 ```Bash
