@@ -1,0 +1,6 @@
+[Demo.entities]
+host = "localhost"
+port = 3400
+user = "postgres"
+password = "Test123#"
+database = "hospital"

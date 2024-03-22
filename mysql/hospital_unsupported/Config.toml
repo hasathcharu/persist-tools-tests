@@ -1,0 +1,15 @@
+[Demo.entities]
+host = "localhost"
+port = 3306
+user = "root"
+password = ""
+database = ""
+
+[DemoUnsupported.entities]
+host = "localhost"
+port = 3306
+user = "root"
+password = ""
+database = ""
+
+

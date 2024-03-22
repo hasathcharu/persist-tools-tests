@@ -1,0 +1,21 @@
+services:
+  mysql-tests:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: Test123#
+    ports:
+      - "3300:3306"
+    volumes:
+      - ./mysql/init.sql:/docker-entrypoint-initdb.d/1.sql
+  postgres-tests:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: Test123#
+    ports:
+      - "3400:5432"
+    volumes:
+      - ./postgresql/init.sql:/docker-entrypoint-initdb.d/init.sql
+  mssql-tests:
+    build: ./mssql
+    ports:
+      - "3500:1433"
