@@ -1,8 +1,8 @@
 # Testing suite for Bal Persist CLI
 ## Preparation
-Spin up the docker containers for databases.
+Create alias for the ballerina distribution built from `persist-tools` and spin up docker containers for databases.
 ```Bash
-alias balx=/your/bal/distribution
+alias balx=path/to/your/bal/distribution/bin/bal
 cd docker
 docker-compose up build
 ```
@@ -10,6 +10,8 @@ docker-compose up build
 ## Testing introspection (MySql)
 
 ### Hospital Test
+
+Delete `persist` and `modules` directories.
 
 Run the pull command
 
@@ -36,6 +38,8 @@ balx test
 ```
 
 ### Hospital Unsupported Test
+
+Delete `persist` and `modules` directories.
 
 Run the pull command
 
@@ -65,7 +69,9 @@ balx test
 
 ### Hospital Test
 
-Run the generate command (remember to use the correct datastore)
+Delete the `modules` directory.
+
+Run the generate command (remember to use the correct datastore).
 
 ```Bash
 balx persist generate --datastore mssql --module entities
@@ -81,7 +87,9 @@ balx test
 
 ### Hospital Unsupported Test
 
-Run the generate command (remember to use the correct datastore)
+Delete the `modules` directory.
+
+Run the generate command (remember to use the correct datastore).
 
 ```Bash
 balx persist generate --datastore mssql --module entities
