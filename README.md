@@ -7,7 +7,7 @@ Create alias for the ballerina distribution built from `persist-tools` and spin 
 ```Bash
 alias balx=path/to/your/bal/distribution/bin/bal
 cd docker
-docker-compose up build
+docker compose up --build --force-recreate -d
 ```
 
 ## Testing introspection (MySql)

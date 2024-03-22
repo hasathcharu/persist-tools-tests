@@ -49,6 +49,7 @@ public type Patient record {|
 public type Doctor record {|
     readonly int id;
     string name;
+    @sql:Varchar {length: 20}
     @sql:Index {name: "specialty_index"}
     string specialty;
     @sql:Name {value: "phone_number"}

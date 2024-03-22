@@ -4,7 +4,7 @@ USE hospital;
 CREATE TABLE Doctor (
 	  id INT NOT NULL,
 	  name VARCHAR(191) NOT NULL,
-	  specialty VARCHAR(191) NOT NULL,
+	  specialty VARCHAR(20) NOT NULL,
 	  phone_number VARCHAR(191) NOT NULL,
 	  salary DECIMAL(10,2),
 	  PRIMARY KEY(id)
