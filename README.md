@@ -110,5 +110,5 @@ balx test
 
 ```Bash
 cd docker
-docker-compose down
+docker compose down
 ```
