@@ -4,3 +4,4 @@ port = 3300
 user = "root"
 password = "Test123#"
 database = "hospital_unsupported"
+connectionOptions = {ssl = {}}
